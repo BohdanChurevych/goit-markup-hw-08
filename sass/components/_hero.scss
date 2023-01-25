@@ -1,0 +1,113 @@
+/* Герой */
+
+.hero {
+  padding: 118px 60px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/mobile-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include retina {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/mobile-hero-2x.jpg");
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/tablet-hero.jpg");
+    padding: 118px 0;
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/tablet-hero-2x.jpg");
+    }
+  }
+
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/desktop-hero.jpg");
+    padding: 200px 0;
+    max-width: 1600px;
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/desktop-hero-2x.jpg");
+    }
+  }
+}
+
+.hero__container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.hero__title {
+  letter-spacing: 0.06em;
+  @include font(900, 26, 1.62);
+  text-transform: uppercase;
+  color: var(--primary-backg-color);
+  margin-bottom: 30px;
+
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+  @include tablet {
+    width: 360px;
+  }
+  @include desktop {
+    @include font(900, 44, 1.36);
+    width: 696px;
+  }
+}
+
+/* Кнопка героя */
+
+.hero__button {
+  margin: 0 auto;
+  @include font(700, 16, 1.88);
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: transparent;
+
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 216px;
+
+  color: var(--primary-backg-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

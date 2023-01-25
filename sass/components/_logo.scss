@@ -1,0 +1,21 @@
+/* Логотип */
+
+.logo {
+  font-family: "Raleway";
+  @include font(700, 26, 1.19);
+  text-decoration: none;
+}
+
+.logo__navigation {
+  color: var(--logo-text-color);
+}
+
+.logo-foot {
+  display: flex;
+  color: var(--primary-backg-color);
+  margin-bottom: 20px;
+}
+
+.logo__title {
+  color: var(--accent-color);
+}
