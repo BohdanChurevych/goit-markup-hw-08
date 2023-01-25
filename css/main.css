@@ -951,6 +951,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    max-width: none;
     width: 528px;
   }
 }
