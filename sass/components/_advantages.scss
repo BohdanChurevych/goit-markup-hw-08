@@ -23,6 +23,9 @@
   color: var(--primary-text-color);
   margin-top: 30px;
   margin-bottom: 10px;
+  @include tablet{
+    justify-content: flex-start;
+  }
 }
 
 .specifics__item {
